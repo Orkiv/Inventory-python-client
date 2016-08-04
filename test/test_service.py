@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.service import Service
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.service import Service
 
 
 class TestService(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestService(unittest.TestCase):
         """
         Test Service
         """
-        model = swagger_client.models.service.Service()
+        model = InventoryClient.models.service.Service()
 
 
 if __name__ == '__main__':

@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.default_api import DefaultApi
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.apis.default_api import DefaultApi
 
 
 class TestDefaultApi(unittest.TestCase):
     """ DefaultApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.default_api.DefaultApi()
+        self.api = InventoryClient.apis.default_api.DefaultApi()
 
     def tearDown(self):
         pass

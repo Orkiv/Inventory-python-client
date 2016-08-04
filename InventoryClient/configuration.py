@@ -79,7 +79,7 @@ class Configuration(object):
 
         # Logging Settings
         self.logger = {}
-        self.logger["package_logger"] = logging.getLogger("swagger_client")
+        self.logger["package_logger"] = logging.getLogger("InventoryClient")
         self.logger["urllib3_logger"] = logging.getLogger("urllib3")
         # Log format
         self.logger_format = '%(asctime)s %(levelname)s %(message)s'
@@ -218,19 +218,19 @@ class Configuration(object):
         :return: The Auth Settings information dict.
         """
         return {
-            'AccountID':
-                {
-                    'type': 'api_key',
-                    'in': 'header',
-                    'key': 'accountid',
-                    'value': self.get_api_key_with_prefix('accountid')
-                },
             'APIKey':
                 {
                     'type': 'api_key',
                     'in': 'header',
                     'key': 'APIKey',
                     'value': self.get_api_key_with_prefix('APIKey')
+                },
+            'AccountID':
+                {
+                    'type': 'api_key',
+                    'in': 'header',
+                    'key': 'accountid',
+                    'value': self.get_api_key_with_prefix('accountid')
                 },
 
         }

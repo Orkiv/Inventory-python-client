@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.dictionary import Dictionary
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.dictionary import Dictionary
 
 
 class TestDictionary(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestDictionary(unittest.TestCase):
         """
         Test Dictionary
         """
-        model = swagger_client.models.dictionary.Dictionary()
+        model = InventoryClient.models.dictionary.Dictionary()
 
 
 if __name__ == '__main__':

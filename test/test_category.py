@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.category import Category
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.category import Category
 
 
 class TestCategory(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestCategory(unittest.TestCase):
         """
         Test Category
         """
-        model = swagger_client.models.category.Category()
+        model = InventoryClient.models.category.Category()
 
 
 if __name__ == '__main__':

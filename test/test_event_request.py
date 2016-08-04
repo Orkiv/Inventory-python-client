@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.event_request import EventRequest
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.event_request import EventRequest
 
 
 class TestEventRequest(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestEventRequest(unittest.TestCase):
         """
         Test EventRequest
         """
-        model = swagger_client.models.event_request.EventRequest()
+        model = InventoryClient.models.event_request.EventRequest()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# swagger_client.DefaultApi
+# InventoryClient.DefaultApi
 
 All URIs are relative to *https://www.orkiv.com/i/api*
 
@@ -34,21 +34,21 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 
 try: 
     api_response = api_instance.all_get()
@@ -83,21 +83,21 @@ This endpoint does not need any parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Id of category to remove
 
 try: 
@@ -136,22 +136,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-query = swagger_client.Dictionary() # Dictionary | Category to query against system (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Dictionary() # Dictionary | Category to query against system (optional)
 
 try: 
     api_response = api_instance.categories_post(query=query)
@@ -191,23 +191,23 @@ If no ID is specified a new category will be created!
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | category id to update.
-category = swagger_client.Category() # Category | New category information.
+category = InventoryClient.Category() # Category | New category information.
 
 try: 
     api_response = api_instance.categories_put(id, category)
@@ -246,22 +246,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-item = swagger_client.Item() # Item | Item to create.
+api_instance = InventoryClient.DefaultApi()
+item = InventoryClient.Item() # Item | Item to create.
 
 try: 
     api_response = api_instance.item_add_post(item)
@@ -299,22 +299,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-items = [swagger_client.Item()] # list[Item] | Items to create.
+api_instance = InventoryClient.DefaultApi()
+items = [InventoryClient.Item()] # list[Item] | Items to create.
 
 try: 
     api_response = api_instance.item_addbulk_post(items)
@@ -352,21 +352,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | item id to remove
 
 try: 
@@ -405,23 +405,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | item id to update.
-item = swagger_client.Dictionary() # Dictionary | New item information.
+item = InventoryClient.Dictionary() # Dictionary | New item information.
 
 try: 
     api_response = api_instance.item_put(id, item)
@@ -460,22 +460,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-query = swagger_client.Dictionary() # Dictionary | Item to query against system. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Dictionary() # Dictionary | Item to query against system. (optional)
 
 try: 
     api_response = api_instance.items_count_post(query=query)
@@ -513,22 +513,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-query = swagger_client.Dictionary() # Dictionary | Item to query against system. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Dictionary() # Dictionary | Item to query against system. (optional)
 
 try: 
     api_response = api_instance.items_post(query=query)
@@ -566,22 +566,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-query = swagger_client.Dictionary() # Dictionary | Item to query against system. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Dictionary() # Dictionary | Item to query against system. (optional)
 
 try: 
     api_response = api_instance.itemsallfields_post(query=query)
@@ -619,22 +619,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-query = swagger_client.Dictionary() # Dictionary | Order to query against system. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Dictionary() # Dictionary | Order to query against system. (optional)
 
 try: 
     api_response = api_instance.orders_post(query=query)
@@ -672,28 +672,28 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 page = 3.4 # float | Current page index. (optional)
 categoryid = 'categoryid_example' # str | Get items under specified category id. (optional)
 sort = 'sort_example' # str | Comma delimited Sort string. ie ; +ordprice. Please use number based fields only (optional)
 search = 'search_example' # str | Performs a regex pattern match against the items within your account (optional)
 minprice = 3.4 # float | Min price in hundreds. (optional)
 maxprice = 3.4 # float | Max price in hudreds. (optional)
-query = swagger_client.Dictionary() # Dictionary | Custom parameters to query against system. (optional)
+query = InventoryClient.Dictionary() # Dictionary | Custom parameters to query against system. (optional)
 
 try: 
     api_response = api_instance.query_post(page=page, categoryid=categoryid, sort=sort, search=search, minprice=minprice, maxprice=maxprice, query=query)
@@ -737,28 +737,28 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 page = 3.4 # float | Current page index. (optional)
 categoryid = 'categoryid_example' # str | Get items under specified category id. (optional)
 sort = 'sort_example' # str | Comma delimited Sort string. ie ; +ordprice. Please use number based fields only (optional)
 search = 'search_example' # str | Performs a regex pattern match against the items within your account (optional)
 minprice = 3.4 # float | Min price in hundreds. (optional)
 maxprice = 3.4 # float | Max price in hudreds. (optional)
-query = swagger_client.Dictionary() # Dictionary | Custom parameters to query against system. (optional)
+query = InventoryClient.Dictionary() # Dictionary | Custom parameters to query against system. (optional)
 
 try: 
     api_response = api_instance.queryallfields_post(page=page, categoryid=categoryid, sort=sort, search=search, minprice=minprice, maxprice=maxprice, query=query)
@@ -802,21 +802,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | ID of the service to update
 
 try: 
@@ -855,21 +855,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 
 try: 
     api_response = api_instance.services_get()
@@ -904,22 +904,22 @@ This endpoint does not need any parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-service = swagger_client.Service() # Service | Service to create.
+api_instance = InventoryClient.DefaultApi()
+service = InventoryClient.Service() # Service | Service to create.
 
 try: 
     api_response = api_instance.services_post(service)
@@ -957,23 +957,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | ID of the service to update
-service = swagger_client.Service() # Service | New service data to set.
+service = InventoryClient.Service() # Service | New service data to set.
 
 try: 
     api_response = api_instance.services_put(id, service)
@@ -1012,21 +1012,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Will delete event attached to this serviceid (optional)
 
 try: 
@@ -1067,22 +1067,22 @@ Will ovveride the current event of the specified service.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-swagger_client.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-swagger_client.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-event_request = swagger_client.EventRequest() # EventRequest | Event to upload
+api_instance = InventoryClient.DefaultApi()
+event_request = InventoryClient.EventRequest() # EventRequest | Event to upload
 
 try: 
     api_response = api_instance.write_post(event_request)

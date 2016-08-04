@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.response import Response
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.response import Response
 
 
 class TestResponse(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestResponse(unittest.TestCase):
         """
         Test Response
         """
-        model = swagger_client.models.response.Response()
+        model = InventoryClient.models.response.Response()
 
 
 if __name__ == '__main__':
