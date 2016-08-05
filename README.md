@@ -60,11 +60,9 @@ IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 # create an instance of the API class
-<<<<<<< HEAD
-api_instance = IO.InventoryClient.DefaultApi
-=======
+
 api_instance = InventoryClient.DefaultApi()
->>>>>>> origin/master
+
 
 try:
     api_response = api_instance.all_get()
