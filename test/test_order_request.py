@@ -30,11 +30,11 @@ import unittest
 
 import IO.InventoryClient
 from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.item import Item
+from IO.InventoryClient.models.order_request import OrderRequest
 
 
-class TestItem(unittest.TestCase):
-    """ Item unit test stubs """
+class TestOrderRequest(unittest.TestCase):
+    """ OrderRequest unit test stubs """
 
     def setUp(self):
         pass
@@ -42,11 +42,11 @@ class TestItem(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testItem(self):
+    def testOrderRequest(self):
         """
-        Test Item
+        Test OrderRequest
         """
-        model = IO.InventoryClient.models.item.Item()
+        model = IO.InventoryClient.models.order_request.OrderRequest()
 
 
 if __name__ == '__main__':

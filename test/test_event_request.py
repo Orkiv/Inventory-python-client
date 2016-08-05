@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import InventoryClient
-from InventoryClient.rest import ApiException
-from InventoryClient.models.event_request import EventRequest
+import IO.InventoryClient
+from IO.InventoryClient.rest import ApiException
+from IO.InventoryClient.models.event_request import EventRequest
 
 
 class TestEventRequest(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestEventRequest(unittest.TestCase):
         """
         Test EventRequest
         """
-        model = InventoryClient.models.event_request.EventRequest()
+        model = IO.InventoryClient.models.event_request.EventRequest()
 
 
 if __name__ == '__main__':

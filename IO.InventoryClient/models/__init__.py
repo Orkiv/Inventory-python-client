@@ -24,30 +24,16 @@
 
 from __future__ import absolute_import
 
-import os
-import sys
-import unittest
-
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.item import Item
-
-
-class TestItem(unittest.TestCase):
-    """ Item unit test stubs """
-
-    def setUp(self):
-        pass
-
-    def tearDown(self):
-        pass
-
-    def testItem(self):
-        """
-        Test Item
-        """
-        model = IO.InventoryClient.models.item.Item()
-
-
-if __name__ == '__main__':
-    unittest.main()
+# import models into model package
+from .category import Category
+from .error import Error
+from .event_request import EventRequest
+from .inventory_group import InventoryGroup
+from .item import Item
+from .item_request import ItemRequest
+from .order import Order
+from .order_request import OrderRequest
+from .response import Response
+from .service import Service
+from .service_request import ServiceRequest
+from .variation import Variation

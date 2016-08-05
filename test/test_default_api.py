@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import InventoryClient
-from InventoryClient.rest import ApiException
-from InventoryClient.apis.default_api import DefaultApi
+import IO.InventoryClient
+from IO.InventoryClient.rest import ApiException
+from IO.InventoryClient.apis.default_api import DefaultApi
 
 
 class TestDefaultApi(unittest.TestCase):
     """ DefaultApi unit test stubs """
 
     def setUp(self):
-        self.api = InventoryClient.apis.default_api.DefaultApi()
+        self.api = IO.InventoryClient.apis.default_api.DefaultApi()
 
     def tearDown(self):
         pass
@@ -98,6 +98,30 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
+    def test_item_get(self):
+        """
+        Test case for item_get
+
+        
+        """
+        pass
+
+    def test_item_media_delete(self):
+        """
+        Test case for item_media_delete
+
+        
+        """
+        pass
+
+    def test_item_media_post(self):
+        """
+        Test case for item_media_post
+
+        
+        """
+        pass
+
     def test_item_put(self):
         """
         Test case for item_put
@@ -122,14 +146,6 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_itemsallfields_post(self):
-        """
-        Test case for itemsallfields_post
-
-        
-        """
-        pass
-
     def test_orders_post(self):
         """
         Test case for orders_post
@@ -138,17 +154,17 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_query_post(self):
+    def test_orders_services_post(self):
         """
-        Test case for query_post
+        Test case for orders_services_post
 
         
         """
         pass
 
-    def test_queryallfields_post(self):
+    def test_query_post(self):
         """
-        Test case for queryallfields_post
+        Test case for query_post
 
         
         """
@@ -170,6 +186,14 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
+    def test_services_open_get(self):
+        """
+        Test case for services_open_get
+
+        
+        """
+        pass
+
     def test_services_post(self):
         """
         Test case for services_post
@@ -181,6 +205,38 @@ class TestDefaultApi(unittest.TestCase):
     def test_services_put(self):
         """
         Test case for services_put
+
+        
+        """
+        pass
+
+    def test_variation_delete(self):
+        """
+        Test case for variation_delete
+
+        
+        """
+        pass
+
+    def test_variation_get(self):
+        """
+        Test case for variation_get
+
+        
+        """
+        pass
+
+    def test_variation_post(self):
+        """
+        Test case for variation_post
+
+        
+        """
+        pass
+
+    def test_variation_put(self):
+        """
+        Test case for variation_put
 
         
         """

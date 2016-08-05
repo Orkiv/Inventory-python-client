@@ -26,14 +26,17 @@ from __future__ import absolute_import
 
 # import models into sdk package
 from .models.category import Category
-from .models.dictionary import Dictionary
 from .models.error import Error
 from .models.event_request import EventRequest
 from .models.inventory_group import InventoryGroup
 from .models.item import Item
+from .models.item_request import ItemRequest
 from .models.order import Order
+from .models.order_request import OrderRequest
 from .models.response import Response
 from .models.service import Service
+from .models.service_request import ServiceRequest
+from .models.variation import Variation
 
 # import apis into sdk package
 from .apis.default_api import DefaultApi

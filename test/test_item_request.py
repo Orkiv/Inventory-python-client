@@ -28,13 +28,13 @@ import os
 import sys
 import unittest
 
-import InventoryClient
-from InventoryClient.rest import ApiException
-from InventoryClient.models.dictionary import Dictionary
+import IO.InventoryClient
+from IO.InventoryClient.rest import ApiException
+from IO.InventoryClient.models.item_request import ItemRequest
 
 
-class TestDictionary(unittest.TestCase):
-    """ Dictionary unit test stubs """
+class TestItemRequest(unittest.TestCase):
+    """ ItemRequest unit test stubs """
 
     def setUp(self):
         pass
@@ -42,11 +42,11 @@ class TestDictionary(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testDictionary(self):
+    def testItemRequest(self):
         """
-        Test Dictionary
+        Test ItemRequest
         """
-        model = InventoryClient.models.dictionary.Dictionary()
+        model = IO.InventoryClient.models.item_request.ItemRequest()
 
 
 if __name__ == '__main__':

@@ -24,13 +24,30 @@
 
 from __future__ import absolute_import
 
-# import models into model package
-from .category import Category
-from .dictionary import Dictionary
-from .error import Error
-from .event_request import EventRequest
-from .inventory_group import InventoryGroup
-from .item import Item
-from .order import Order
-from .response import Response
-from .service import Service
+import os
+import sys
+import unittest
+
+import IO.InventoryClient
+from IO.InventoryClient.rest import ApiException
+from IO.InventoryClient.models.variation import Variation
+
+
+class TestVariation(unittest.TestCase):
+    """ Variation unit test stubs """
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def testVariation(self):
+        """
+        Test Variation
+        """
+        model = IO.InventoryClient.models.variation.Variation()
+
+
+if __name__ == '__main__':
+    unittest.main()
