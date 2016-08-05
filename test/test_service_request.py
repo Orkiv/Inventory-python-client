@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.service_request import ServiceRequest
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.service_request import ServiceRequest
 
 
 class TestServiceRequest(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestServiceRequest(unittest.TestCase):
         """
         Test ServiceRequest
         """
-        model = IO.InventoryClient.models.service_request.ServiceRequest()
+        model = InventoryClient.models.service_request.ServiceRequest()
 
 
 if __name__ == '__main__':

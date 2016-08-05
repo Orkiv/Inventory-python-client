@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.order_request import OrderRequest
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.order_request import OrderRequest
 
 
 class TestOrderRequest(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestOrderRequest(unittest.TestCase):
         """
         Test OrderRequest
         """
-        model = IO.InventoryClient.models.order_request.OrderRequest()
+        model = InventoryClient.models.order_request.OrderRequest()
 
 
 if __name__ == '__main__':

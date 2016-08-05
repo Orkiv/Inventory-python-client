@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.variation import Variation
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.variation import Variation
 
 
 class TestVariation(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestVariation(unittest.TestCase):
         """
         Test Variation
         """
-        model = IO.InventoryClient.models.variation.Variation()
+        model = InventoryClient.models.variation.Variation()
 
 
 if __name__ == '__main__':

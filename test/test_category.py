@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.category import Category
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.category import Category
 
 
 class TestCategory(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestCategory(unittest.TestCase):
         """
         Test Category
         """
-        model = IO.InventoryClient.models.category.Category()
+        model = InventoryClient.models.category.Category()
 
 
 if __name__ == '__main__':

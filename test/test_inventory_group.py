@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.inventory_group import InventoryGroup
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.inventory_group import InventoryGroup
 
 
 class TestInventoryGroup(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestInventoryGroup(unittest.TestCase):
         """
         Test InventoryGroup
         """
-        model = IO.InventoryClient.models.inventory_group.InventoryGroup()
+        model = InventoryClient.models.inventory_group.InventoryGroup()
 
 
 if __name__ == '__main__':

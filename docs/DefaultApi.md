@@ -1,4 +1,4 @@
-# IO.InventoryClient.DefaultApi
+# InventoryClient.DefaultApi
 
 All URIs are relative to *https://www.orkiv.com/i/api*
 
@@ -41,21 +41,21 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 
 try: 
     api_response = api_instance.all_get()
@@ -90,21 +90,21 @@ This endpoint does not need any parameter.
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Id of category to remove
 
 try: 
@@ -143,22 +143,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-query = IO.InventoryClient.Category() # Category | Category to query against system (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.Category() # Category | Category to query against system (optional)
 
 try: 
     api_response = api_instance.categories_post(query=query)
@@ -198,23 +198,23 @@ If no ID is specified a new category will be created!
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | category id to update.
-category = IO.InventoryClient.Category() # Category | New category information.
+category = InventoryClient.Category() # Category | New category information.
 
 try: 
     api_response = api_instance.categories_put(id, category)
@@ -253,22 +253,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-item = IO.InventoryClient.ItemRequest() # ItemRequest | Item to create.
+api_instance = InventoryClient.DefaultApi()
+item = InventoryClient.ItemRequest() # ItemRequest | Item to create.
 
 try: 
     api_response = api_instance.item_add_post(item)
@@ -306,22 +306,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-items = [IO.InventoryClient.ItemRequest()] # list[ItemRequest] | Items to create.
+api_instance = InventoryClient.DefaultApi()
+items = [InventoryClient.ItemRequest()] # list[ItemRequest] | Items to create.
 
 try: 
     api_response = api_instance.item_addbulk_post(items)
@@ -359,21 +359,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | item id to remove
 
 try: 
@@ -412,21 +412,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Item ID to open.
 
 try: 
@@ -465,21 +465,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 imageurl = 'imageurl_example' # str | URL of image to remove
 
 try: 
@@ -520,21 +520,21 @@ This endpoint is currently in testing.
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Valid item id to bind image to.
 image = '/path/to/file.txt' # file | Image.
 
@@ -575,23 +575,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | item id to update.
-item = IO.InventoryClient.ItemRequest() # ItemRequest | New item information.
+item = InventoryClient.ItemRequest() # ItemRequest | New item information.
 
 try: 
     api_response = api_instance.item_put(id, item)
@@ -630,24 +630,24 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 minprice = 3.4 # float | Min price of items to find (optional)
 maxprice = 3.4 # float | Max price of items to find (optional)
-query = IO.InventoryClient.ItemRequest() # ItemRequest | Item to query against system. (optional)
+query = InventoryClient.ItemRequest() # ItemRequest | Item to query against system. (optional)
 
 try: 
     api_response = api_instance.items_count_post(minprice=minprice, maxprice=maxprice, query=query)
@@ -687,24 +687,24 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 minprice = 3.4 # float | Min price of items to find (optional)
 maxprice = 3.4 # float | Max price of items to find (optional)
-query = IO.InventoryClient.ItemRequest() # ItemRequest | Item to query against system. (optional)
+query = InventoryClient.ItemRequest() # ItemRequest | Item to query against system. (optional)
 
 try: 
     api_response = api_instance.items_post(minprice=minprice, maxprice=maxprice, query=query)
@@ -744,22 +744,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-query = IO.InventoryClient.OrderRequest() # OrderRequest | Order to query against item invoices. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.OrderRequest() # OrderRequest | Order to query against item invoices. (optional)
 
 try: 
     api_response = api_instance.orders_post(query=query)
@@ -797,22 +797,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-query = IO.InventoryClient.OrderRequest() # OrderRequest | Order to query against service invoices. (optional)
+api_instance = InventoryClient.DefaultApi()
+query = InventoryClient.OrderRequest() # OrderRequest | Order to query against service invoices. (optional)
 
 try: 
     api_response = api_instance.orders_services_post(query=query)
@@ -850,28 +850,28 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 page = 3.4 # float | Current page index. (optional)
 categoryid = 'categoryid_example' # str | Get items under specified category id. (optional)
 sort = 'sort_example' # str | Comma delimited Sort string. ie ; +ordprice. Please use number based fields only (optional)
 search = 'search_example' # str | Performs a regex pattern match against the items within your account (optional)
 minprice = 3.4 # float | Min price in hundreds (cents). (optional)
 maxprice = 3.4 # float | Max price in hundreds (cents). (optional)
-query = IO.InventoryClient.ItemRequest() # ItemRequest | Custom parameters to query against system. (optional)
+query = InventoryClient.ItemRequest() # ItemRequest | Custom parameters to query against system. (optional)
 
 try: 
     api_response = api_instance.query_post(page=page, categoryid=categoryid, sort=sort, search=search, minprice=minprice, maxprice=maxprice, query=query)
@@ -915,21 +915,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | ID of the service to update
 
 try: 
@@ -968,21 +968,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 
 try: 
     api_response = api_instance.services_get()
@@ -1017,21 +1017,21 @@ This endpoint does not need any parameter.
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | ID of service to open
 
 try: 
@@ -1070,22 +1070,22 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-service = IO.InventoryClient.ServiceRequest() # ServiceRequest | Service to create.
+api_instance = InventoryClient.DefaultApi()
+service = InventoryClient.ServiceRequest() # ServiceRequest | Service to create.
 
 try: 
     api_response = api_instance.services_post(service)
@@ -1123,23 +1123,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | ID of the service to update
-service = IO.InventoryClient.ServiceRequest() # ServiceRequest | New service data to set.
+service = InventoryClient.ServiceRequest() # ServiceRequest | New service data to set.
 
 try: 
     api_response = api_instance.services_put(id, service)
@@ -1178,21 +1178,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | variation id to remove
 
 try: 
@@ -1231,21 +1231,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Variation ID to open.
 
 try: 
@@ -1284,23 +1284,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Valid item id to bind variation to.
-item = IO.InventoryClient.Variation() # Variation | Variation information.
+item = InventoryClient.Variation() # Variation | Variation information.
 
 try: 
     api_response = api_instance.variation_post(id, item)
@@ -1339,23 +1339,23 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | variation id to update.
-item = IO.InventoryClient.Variation() # Variation | New variation information.
+item = InventoryClient.Variation() # Variation | New variation information.
 
 try: 
     api_response = api_instance.variation_put(id, item)
@@ -1394,21 +1394,21 @@ Name | Type | Description  | Notes
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
+api_instance = InventoryClient.DefaultApi()
 id = 'id_example' # str | Will delete event attached to this serviceid (optional)
 
 try: 
@@ -1449,22 +1449,22 @@ Will ovveride the current event of the specified service.
 ### Example 
 ```python
 import time
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
+import InventoryClient
+from InventoryClient.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: APIKey
-IO.InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['APIKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['APIKey'] = 'Bearer'
 # Configure API key authorization: AccountID
-IO.InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
+InventoryClient.configuration.api_key['accountid'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# IO.InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
+# InventoryClient.configuration.api_key_prefix['accountid'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = IO.InventoryClient.DefaultApi()
-event_request = IO.InventoryClient.EventRequest() # EventRequest | Event to upload
+api_instance = InventoryClient.DefaultApi()
+event_request = InventoryClient.EventRequest() # EventRequest | Event to upload
 
 try: 
     api_response = api_instance.write_post(event_request)

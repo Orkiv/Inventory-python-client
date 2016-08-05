@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.models.item import Item
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.models.item import Item
 
 
 class TestItem(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestItem(unittest.TestCase):
         """
         Test Item
         """
-        model = IO.InventoryClient.models.item.Item()
+        model = InventoryClient.models.item.Item()
 
 
 if __name__ == '__main__':

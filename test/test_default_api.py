@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import IO.InventoryClient
-from IO.InventoryClient.rest import ApiException
-from IO.InventoryClient.apis.default_api import DefaultApi
+import InventoryClient
+from InventoryClient.rest import ApiException
+from InventoryClient.apis.default_api import DefaultApi
 
 
 class TestDefaultApi(unittest.TestCase):
     """ DefaultApi unit test stubs """
 
     def setUp(self):
-        self.api = IO.InventoryClient.apis.default_api.DefaultApi()
+        self.api = InventoryClient.apis.default_api.DefaultApi()
 
     def tearDown(self):
         pass
